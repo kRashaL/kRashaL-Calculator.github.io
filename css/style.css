@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,600);
+
+html, body {
+    font-family: 'Inter', sans-serif; 
+}
+.container {
+    background: linear-gradient(90deg, rgba(226,226,226,1) 0%, rgba(201,214,255,1) 100%);
+    width: 100vw;
+    height: 100vh;
+}
+.content {
+    width: 100vw;
+    height: 50px;
+    background-color: #464647;
+}
+.header__title{
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 99px;
+        height: 1px;
+        background-color: #ffff;
+        bottom: -4px;
+        left: 47.4%;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+        }
+    
+        &:hover::before{
+        transform-origin: left;
+        transform: scaleX(1);
+        }
+
+}
+.header__title h1 {
+    padding-top: 12px;
+    text-align: center;
+}
+.calculator__main {
+    border: 1px solid #464647;
+    border-radius: 12px;
+    margin: 170px auto;
+    width: 464px;
+    height: 642px;
+    background-color: #464647;
+}
+.calculator__display {
+    padding: 20px 20px 8px 20px;
+    width: 464px;
+    height: 162px;
+}
+.calculator__display p {
+    position: relative;
+    font-weight: 400;
+    font-size: 88px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: right;
+    color: #fff;
+}
+.calculator__display::before {
+    content: "";
+    position: absolute;
+    background: url('/img/gear.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 26px;
+    height: 24px;
+}
+.calculator {
+    width: 464px;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 17px;
+}
+.number__btn{
+    border: 1px solid #464647;
+    width: 115.5px;
+    height: 95.5px;
+    background-color: #777677;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.number__btn:hover {
+    scale: 0.97;
+}
+.number__btn--big {
+    width: 231.45px;
+}
+.number__btn--dot {
+    background: #777677;
+    opacity: 0.2;
+}
+.number__btn--orange {
+    background: #ff9f0a;
+}
+.number__btn--ac {
+    background-color: #585859;
+}
+.number__btn--dark {
+    background: #777677;
+    opacity: 0.2;
+}
+.row {
+    display: flex;
+}

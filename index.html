@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="content">
+                <a href="#!">
+                    <div class="header__title">
+                        <h1>Calculator</h1>
+                    </div>
+                </a>
+                <div class="calculator__main">
+                    <div class="calculator__display">
+                        <p class="result" ></p>
+                    </div>
+                    <div class="calculator">
+                        <div class="row">
+                            <button id="clear" class="number__btn number__btn--ac" value="AC">AC</button>
+                            <button class="number__btn number__btn--dark">+/-</button>
+                            <button id="percent" class="number__btn number__btn--dark" value="%">%</button>
+                            <button id="division" class="number__btn number__btn--orange" value="/">/</button>
+                        </div>
+                        <div class="row">
+                            <button id="button7" class="number__btn" value="7">7</button>
+                            <button id="button" class="number__btn" value="8">8</button>
+                            <button id="button" class="number__btn" value="9">9</button>
+                            <button id="multiply" class="number__btn number__btn--orange">*</button>
+                        </div>
+                        <div class="row">
+                            <button id="button" class="number__btn" value="4">4</button>
+                            <button id="button" class="number__btn" value="5">5</button>
+                            <button id="button6" class="number__btn" value="6">6</button>
+                            <button id="minus" class="number__btn number__btn--orange">-</button>
+                        </div>
+                        <div class="row">
+                            <button id="button" class="number__btn" value="1">1</button>
+                            <button id="button" class="number__btn" value="2">2</button>
+                            <button id="button" class="number__btn" value="3">3</button>
+                            <button id="plus" class="number__btn number__btn--orange" value="+">+</button>
+                        </div>
+                        <div class="row">
+                            <button id="button" class="number__btn number__btn--big" value="0">0</button>
+                            <button id="buttonDot" class="number__btn number__btn--dot" value=".">.</button>
+                            <button id="resultBtn" class="number__btn number__btn--orange" value="=">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
